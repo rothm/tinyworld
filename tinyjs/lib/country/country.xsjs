@@ -11,7 +11,7 @@ function saveCountry(country) {
 		{ return {body: output, status: $.net.http.CREATED};}
 }
 
-var body = $.request.body.asserting();
+var body = $.request.body.asString();
 var country = JSON.parse(body);
 
 //validate the inputs here !
